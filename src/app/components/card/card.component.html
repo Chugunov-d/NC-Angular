@@ -1,0 +1,13 @@
+<div class="card">
+  <img src="{{ card.img }}" class="card-img" />
+  <div class="card-container">
+    <div class="text">
+      <p class="game-name">{{ card.name }}</p>
+      <p class="money">{{ card.price }}p</p>
+    </div>
+    <div class="card-info">
+      <button class="button-info" (click)="addToCart()">Купить</button>
+      <button class="details" routerLink="/card/{{ card.id }}">Details</button>
+    </div>
+  </div>
+</div>

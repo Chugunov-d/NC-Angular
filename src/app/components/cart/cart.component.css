@@ -1,0 +1,85 @@
+.popup-background {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(219, 216, 219, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.popup-background:target {
+  display: block;
+}
+
+.popup {
+  position: absolute;
+  width: 700px;
+  height: 750px;
+  left: 35%;
+  top: 15%;
+  border-radius: 10px;
+  background: #fff;
+}
+.popup-top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.popup-top p {
+  left: 40%;
+  font-size: 19px;
+  position: relative;
+}
+.popup-list {
+  min-height: 610px;
+}
+
+.popup-button {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+input {
+  background: green;
+  border-radius: 20px;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.popup-list {
+  padding-top: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 65%;
+}
+
+.popup-list ul li {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  line-height: 2;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+.popup-list-price {
+  font-size: 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+hr {
+  margin-top: 16px;
+}
+
+.popup-list::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(36, 38, 39, 0.5);
+  border-radius: 10px;
+}
+.popup-list::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}

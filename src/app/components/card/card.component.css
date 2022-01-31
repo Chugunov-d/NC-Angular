@@ -1,0 +1,48 @@
+.card {
+  max-width: 250px;
+  height: auto;
+  background: rgb(0, 0, 0);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  color: white;
+  border: 1px solid #fff;
+  box-shadow: 0 0 20px #555;
+  margin: 25px 37px;
+  border-radius: 5%;
+  background-image: image("https://gabestore.ru/images/cardshadow.png");
+}
+.text {
+  display: flex;
+  justify-content: space-between;
+}
+.card-img {
+  border-radius: 5%;
+  width: 100%;
+}
+p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.card-info {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+  padding: 10px 0 0 10px;
+}
+
+.button-info {
+  list-style: none;
+  text-decoration: none;
+}
+.game-name {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+button {
+  background-color: rgb(255, 175, 71);
+  border: white;
+  border-radius: 15px;
+  width: 50px;
+  height: 20px;
+}

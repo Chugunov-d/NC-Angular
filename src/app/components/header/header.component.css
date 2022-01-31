@@ -1,0 +1,66 @@
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+header .top-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 13px;
+}
+li {
+  list-style: none;
+}
+
+header .top-nav li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  align-self: start;
+  font-size: 18px;
+  padding: 10px 15px;
+}
+header .logo {
+  margin-top: 10px;
+  font-size: 40px;
+  color: #020618;
+  margin-left: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.form {
+  position: relative;
+  width: 700px;
+  margin: 0 auto;
+}
+input,
+button {
+  outline: none;
+  background: transparent;
+}
+input {
+  width: 100%;
+  height: 42px;
+  padding-left: 15px;
+  border-radius: 25px;
+}
+
+input:focus {
+  border-color: #ffffff;
+  background-color: aliceblue;
+}
+.login {
+  margin-top: 10px;
+  margin-right: 80px;
+  max-height: 50px;
+  width: 100px;
+  border-radius: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #ffffff;
+  font-size: large;
+  border-top: white;
+}

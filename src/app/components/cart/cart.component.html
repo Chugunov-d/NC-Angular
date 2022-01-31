@@ -1,0 +1,27 @@
+<div class="popup-container" id="basket">
+  <div class="popup">
+    <div class="popup-top">
+      <p>Ваши покупки</p>
+      <span routerLink="/home" style="cursor: pointer">X</span>
+    </div>
+    <hr />
+    <div class="popup-list">
+      <div *ngIf="cartData.length; else emptyTemplate" id="popup-template">
+        <ul>
+          <li>
+            <span class="popup-list-name">
+              <app-card *ngFor="let item of cartData" [card]="item"></app-card>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <div class="popup-button">
+      <input type="button" value="Оформить заказ" />
+    </div>
+  </div>
+</div>
+<ng-template #emptyTemplate>
+  <p class="emptyTitle"></p>
+</ng-template>

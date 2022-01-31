@@ -1,0 +1,25 @@
+<header>
+  <div class="logo">
+    <p>GameStore</p>
+    <input
+      type="text"
+      class="form"
+      [(ngModel)]="search"
+      (keyup.enter)="onSearch()"
+    />
+    <button type="button" (click)="changeUserStatus()" class="login">
+      {{ userLoggedIn ? "ВЫЙТИ" : "ВОЙТИ" }}
+    </button>
+    <hr />
+  </div>
+  <div class="top-nav">
+    <ul>
+      <li><a href="">Новинки</a></li>
+      <li><a href="">Лидеры Продаж</a></li>
+      <li><a href="">Поступления</a></li>
+      <li><a href="">Предзаказы</a></li>
+      <li><a href="">Поддержка</a></li>
+      <li><a routerLink="/cart">Корзина</a></li>
+    </ul>
+  </div>
+</header>
